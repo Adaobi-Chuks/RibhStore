@@ -82,8 +82,8 @@ router.get('/auth/twitter/callback', passport_1.default.authenticate('twitter', 
     // }
     // Respond with user information (assuming `req.user` has the necessary fields)
     // res.json(req.user);
-    // res.redirect(`https://www.ribh.store/verify-email/connect-accounts?twitterId=${(req as any).user.id}`);
-    res.redirect(`http://localhost:3000/verify-email/connect-accounts?twitterId=${req.user.id}`);
+    res.redirect(`https://www.ribh.store/verify-email/connect-accounts?twitterId=${req.user.id}`);
+    // res.redirect(`http://localhost:3000/verify-email/connect-accounts?twitterId=${(req as any).user.id}`);
 }));
 // join waitlist
 router.post('/waitlist', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
